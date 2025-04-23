@@ -9,7 +9,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # install homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -70,23 +70,12 @@ brew cleanup
 # Add cask
 brew tap homebrew/cask
 # brew cask install gimp
-brew cask install java iterm2 sublime-text sshfs google-chrome
-brew cask install spotify rambox
-brew cask install jitouch
-brew cask install flux
-
-# install go
-export GOPATH="${HOME}/git/go"
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
-brew install go
-go get golang.org/x/tools/cmd/godoc
-go get github.com/golang/lint/golint
+brew install java iterm2 sublime-text sshfs google-chrome notion
+brew install spotify bitwarden telegram signal fathom visual-studio-code
+# brew install flux
 
 # install appstore cli & apps
 brew install mas
-mas install 1091189122 # Bear - Notes App
 mas install 965442961  # Screenie - Screenshot Utitlity
 
 # override macos settings
