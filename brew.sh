@@ -9,7 +9,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # install homebrew
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -72,12 +72,14 @@ brew tap homebrew/cask
 # brew cask install gimp
 brew install java iterm2 sublime-text sshfs google-chrome notion
 brew install spotify bitwarden telegram signal fathom visual-studio-code
-# brew install flux
 
 # install appstore cli & apps
 brew install mas
 mas install 965442961  # Screenie - Screenshot Utitlity
 
+# When only running brew.sh and not the other commands enable these lines for key settings
+
 # override macos settings
-defaults write NSGlobalDomain KeyRepeat -int 1 # speed up key repeat rate
-defaults write -g InitialKeyRepeat -int 15 # delay until key repeat 225 ms
+# defaults write NSGlobalDomain KeyRepeat -int 1 # speed up key repeat rate
+# defaults write -g InitialKeyRepeat -int 15 # delay until key repeat 225 ms
+# source ~/.bash_profile;

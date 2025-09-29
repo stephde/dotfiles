@@ -8,7 +8,8 @@ dockutil --no-restart --add "/Applications/Calendar.app"
 dockutil --no-restart --add "/Applications/System Preferences.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
 dockutil --no-restart --add "/Applications/iTerm.app"
-dockutil --no-restart --add "/Applications/Rambox.app"
-dockutil --no-restart --add "/Applications/Sublime\ Text.app"
+# dockutil --no-restart --add "/Applications/Visual Studio Code.app"
+# dockutil --no-restart --add "/Applications/Activity Monitor.app"
+# dockutil --no-restart --add "/Applications/Bitwarden.app"
 
 killall Dock
