@@ -71,7 +71,7 @@ brew cleanup
 brew tap homebrew/cask
 # brew cask install gimp
 brew install java iterm2 sublime-text sshfs google-chrome notion
-brew install spotify bitwarden telegram signal fathom visual-studio-code
+brew install spotify bitwarden telegram signal fathom visual-studio-code arc
 
 # install appstore cli & apps
 brew install mas
