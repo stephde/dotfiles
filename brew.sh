@@ -61,6 +61,10 @@ brew install python3
 brew install postgres
 brew install mysql
 
+# other dev tools
+brew install docker
+brew install gemini-cli
+
 # macos stuff
 brew install dockutil
 
